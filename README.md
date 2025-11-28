@@ -8,8 +8,8 @@
 
 ## Endpoints
 
-POST /login
-GET /courses
-GET /grades
-POST /grades (teacher only)
-DELETE /users/:id (admin only)
+- POST /login
+- GET /courses
+- GET /grades
+- POST /grades (teacher only)
+- DELETE /users/:id (admin only)
