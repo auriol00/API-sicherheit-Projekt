@@ -18,6 +18,14 @@ app.use('/login', authRoutes);
 app.use('/courses', coursesRoutes);
 app.use('/grades', gradesRoutes);
 app.use('/users', usersRoutes);
+app.post('/debug', (req, res) => {
+  res.json({
+    headers: req.headers,
+    body: req.body,
+    rawBodyType: typeof req.body,
+  });
+});
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
